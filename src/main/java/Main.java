@@ -7,7 +7,7 @@ public class Main {
     static final Object objectsFirst = new Object();
     static final Object objectsSecond = new Object();
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Thread thread = new Thread(() -> {
             while (true) {
                 synchronized (objectsFirst) {
